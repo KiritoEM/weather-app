@@ -1,5 +1,4 @@
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import SectionContent from "./SectionContent";
 
 const HomeContent = () => {
   return (
@@ -8,29 +7,18 @@ const HomeContent = () => {
         <div className="row gx-0">
           <div className="col-7">
             <div className="section-cover">
-                <div className="logo">
-                     <h4>Weather-app</h4>
-                </div>
-                 <div className="degree">
-                     <h1>26°</h1>
-                     <h4>Nosy-Be Hell-Ville</h4>
-                 </div>
+              <div className="logo">
+                <h4><img src="/images/weather.svg" alt="" /> Weather-app</h4>
+              </div>
+              <div className="degree">
+                <h1>26° C</h1>
+                <h3>Nosy-Be Hell-Ville</h3>
+                <h5>Wednesday, 06 Dec 2023</h5>
+              </div>
             </div>
           </div>
           <div className="col-5">
-             <div className="section-content">
-                  <div className="header">
-                      <h5>Recherchez une ville</h5>
-                  </div>
-                  <div className="search-bar">
-                       <div className="input">
-                          <input type="text" name="" id="" placeholder="Nom de la ville ..."/>
-                       </div>
-                       <div className="button">
-                          <FontAwesomeIcon icon={faSearch}/>
-                       </div>
-                  </div>
-             </div>
+            <SectionContent/>
           </div>
         </div>
       </div>
